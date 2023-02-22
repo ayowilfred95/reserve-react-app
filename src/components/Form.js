@@ -30,7 +30,7 @@ const navigate = useNavigate();
 }
 
   return (
-   <div className="w-full py-[100px] px-[600px] max-w-xs md:flex md:items-center mb-6">
+   <div className="w-full px-4 py-12 m-auto max-w-[1640px] md:flex md:items-center mb-6">
      
       <form className=" bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit}>
         <h1 className="block text-orange-600 text-center py-4 text-4xl font-bold mb-2">Order Form</h1>
