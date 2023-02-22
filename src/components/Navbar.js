@@ -8,7 +8,9 @@ import Hero from "./Hero";
 import HeadlineCards from "./HeadlineCards";
 import Food from "./Food";
 import Category from "./Category";
-import Contact from "./Contact";
+import Order from "./Order";
+import Contact from './Contact';
+
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -72,6 +74,7 @@ const Navbar = () => {
      <HeadlineCards />
      <Food />
      <Category />
+    <Order />
     <Contact />
     </div>
   )
