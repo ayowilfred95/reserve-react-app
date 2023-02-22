@@ -1,20 +1,20 @@
 import React from "react";
-import Category from "./components/Category";
-import Food from "./components/Food";
-import HeadlineCards from "./components/HeadlineCards";
-import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import {Routes, Route} from 'react-router-dom';
+import Form from "./components/Form";
 
 function App() {
   return (
-    <div className="App">
-     <Navbar />
-     <Hero />
-     <HeadlineCards />
-     <Food />
-     <Category />
-   
+    
+    <div className="App"> 
+     <Routes>
+       <Route exact path="/" element={<Navbar />} />
+      <Route path="/form" element={<Form />} />
+    </Routes>  
     </div>
+   
+
+   
   );
 }
 

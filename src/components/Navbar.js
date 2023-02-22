@@ -4,12 +4,20 @@ import { BsFillCartFill,BsFillSaveFill } from 'react-icons/bs';
 import {TbTruckDelivery} from 'react-icons/tb'
 import {FaUserFriends, FaWallet} from 'react-icons/fa'
 import {MdFavorite, MdHelp} from 'react-icons/md'
+import Hero from "./Hero";
+import HeadlineCards from "./HeadlineCards";
+import Food from "./Food";
+import Category from "./Category";
+import Contact from "./Contact";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
 
 
   return (
+    <div>
+
+   
     <div className='max-w-[1640px] mx-auto flex justify-between items-center p-4 ' >
         {/* Left Side */}
         <div className='flex items-center ' >
@@ -17,7 +25,7 @@ const Navbar = () => {
            <AiOutlineMenu size={30} />
         </div>
         <h1 className=' text-2xl sm:text-3xl lg:text-4xl px-2 '>
-            Best <span className='font-bold'>Eats</span>
+            Phummyty <span className='font-bold'>Eats</span>
         </h1>
         <div className=' hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px] '>
             <p className='bg-black text-white rounded-full'>Delivery</p>
@@ -58,8 +66,13 @@ const Navbar = () => {
                 <li className='text-xl py-4 flex'><FaUserFriends size={25} className='mr-4' /> Invite Friends</li>
         </ul>
     </nav>
-
     </div>
+    </div>
+     <Hero />
+     <HeadlineCards />
+     <Food />
+     <Category />
+    <Contact />
     </div>
   )
 }
